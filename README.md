@@ -153,3 +153,19 @@ csv
 ### NotesCaching: article3.py reuses cached summaries in CACHED mode; article3_bench.py uses REPEATED mode, always regenerating summaries.
 
 
+
+
+
+## Files
+### redundant
+| Original<br>Filename | New<br>Filename | Purpose |
+| :--- | :--- | :--------------------------: |
+| tableintegrate.py | nbai.py | Summarize News boat articles |
+| article3.sh | article_processor.py | Summarize url with AI |
+| tabletpost.py | Blank | Format actions table for twitter |
+
+### Parallel new versus old code. 
+| Tool<br>Chains | Purpose | modified? |
+| :------ | :--------------------------: | :--------------: |
+| tableintegrate.py -> article3.sh | Original working code | Unmodified |
+| nbai.py ->  article_processor.py | New | Modified |
