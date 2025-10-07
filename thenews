@@ -1,14 +1,15 @@
+export PROJECT_DIR="/home/scout/projects/python/nbai"
+rm -rf ${PROJECT_DIR}/venv
 while :
 do
     newsboat 
-    python3 -m venv venv 2> /dev/null
-    
-    source venv/bin/activate 
-    pip install -r requirements.txt
+    python3 -m venv ${PROJECT_DIR}/venv/ 
+    source ${PROJECT_DIR}/venv/bin/activate 
+    pip install -r ${PROJECT_DIR}/requirements.txt
     cd scripts
-    python ./tableintegrate.py 192.168.0.10:11434
-    python ./tabletpost.py 
+    python ${PROJECT_DIR}/scripts/nbai.py 192.168.0.8:11434 192.168.0.10:11434 192.168.0.5:11434
+    python ${PROJECT_DIR}/scripts/tabletpost.py 
     deactivate
-    sleep 1
+    sleep 10
 done
 
