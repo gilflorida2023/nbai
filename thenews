@@ -1,15 +1,26 @@
 export PROJECT_DIR="/home/scout/projects/python/nbai"
 rm -rf ${PROJECT_DIR}/venv
+python3 -m venv ${PROJECT_DIR}/venv/ 
+source ${PROJECT_DIR}/venv/bin/activate 
+pip install -r ${PROJECT_DIR}/requirements.txt
+cd scripts
 while :
 do
     newsboat 
-    python3 -m venv ${PROJECT_DIR}/venv/ 
-    source ${PROJECT_DIR}/venv/bin/activate 
-    pip install -r ${PROJECT_DIR}/requirements.txt
-    cd scripts
     python ${PROJECT_DIR}/scripts/nbai.py 192.168.0.8:11434 192.168.0.10:11434 192.168.0.5:11434
     python ${PROJECT_DIR}/scripts/tabletpost.py 
-    deactivate
-    sleep 10
+
+    
+    # Prompt and wait for user input
+    echo "================================"
+    read -n 1 -r -p "Press 'q' to quit, any other key to continue: " key
+    echo  # Add newline after input
+    
+    # Check if 'q' or 'Q' was pressed
+    if [[ $key == "q" || $key == "Q" ]]; then
+        echo "Quitting..."
+        deactivate
+        exit 0
+    fi
 done
 

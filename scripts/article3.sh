@@ -13,6 +13,7 @@
 #   OLLAMA_HOST   - Required first parameter, host:port for Ollama server (e.g., 192.168.0.8:11434)
 #   URL           - URL of the article to summarize
 #   OLLAMA_MODEL  - Optional, model to use (default: llama3:8b)
+#   OLLAMA_MODEL  - Optional, model to use (default: llama3:8b)
 #   SUMMARY_LENGTH - Optional, character length for summary (default: 257)
 #   REPEATED      - Optional, set to "REPEATED" to allow processing of repeated content (default: detect repeats)
 
@@ -90,8 +91,8 @@ validate_ollama_host "$OLLAMA_HOST" "article3 main module"
 URL="$2"
 #OLLAMA_MODEL="${3:-llama3:8b}"
 #OLLAMA_MODEL="${3:-qwen3:1.7b}"
-#OLLAMA_MODEL="${3:-qwen2.5:3b}"
-OLLAMA_MODEL="${3:-llama3.2:3b}"
+OLLAMA_MODEL="${3:-qwen2.5:3b}"
+#OLLAMA_MODEL="${3:-llama3.2:3b}"
 SUMMARY_LENGTH="${4:-257}"
 ALLOW_REPEATED="${5:-no}"
 
