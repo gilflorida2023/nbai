@@ -452,6 +452,17 @@ class ActionDatabase:
             self.conn.close()
             self.conn = None
 
+def table_counts(db):
+    """
+    Display table counts for queue, actions, and feed_stats.
+    
+    Args:
+        db (ActionDatabase): Database instance
+    """
+    print(f"{'Queue:':14s} {db.count_queue()} URLs")
+    print(f"{'Action:':14s} {db.count_actions()} processed URLs")
+    print(f"{'Feed_stats:':14s} {db.count_feed_stats()}")
+
 def determine_promotion(url, worker_pool):
     """
     Generate promotion using worker pool without timeouts.
@@ -1108,6 +1119,7 @@ def print_main_menu():
     print("  [most] Show most used feeds")
     print("  [least] Show least used feeds")
     print("  [l] List search folders")
+    print("  [dc] Display queue counts")
     print("  [q] Quit")
 
 def main():
@@ -1159,9 +1171,7 @@ Features:
         while True:
             print("\nNewsboat URL Processor")
             print("=" * 50)
-            print(f"{'Queue:':14s} {db.count_queue()} URLs")
-            print(f"{'Action:':14s} {db.count_actions()} processed URLs")
-            print(f"{'Feed_stats:':14s} {db.count_feed_stats()}" )
+            #table_counts(db)
             print_main_menu()
             
             selection = input("\nEnter selection: ").strip().lower()
@@ -1241,6 +1251,9 @@ Features:
             elif selection == 'p':
                 process_queue(worker_pool, db)
                 print(f"Actions: {db.count_actions()} processed URLs")
+                    
+            elif selection == 'dc':
+                table_counts(db)
                     
             else:
                 print("Invalid selection. Please try again.")
