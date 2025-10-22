@@ -89,10 +89,8 @@ fi
 OLLAMA_HOST="$1"
 validate_ollama_host "$OLLAMA_HOST" "article3 main module"
 URL="$2"
-OLLAMA_MODEL="${3:-llama3.2:1b}"
-#try gemma3:1b or gemma3:4b
-#OLLAMA_MODEL="${3:-qwen3:1.7b}"
-#OLLAMA_MODEL="${3:-llama3.2:3b}"
+#OLLAMA_MODEL="${3:-llama3.2:1b}"
+OLLAMA_MODEL="${3:-llama3.2:3b}"
 SUMMARY_LENGTH="${4:-257}"
 ALLOW_REPEATED="${5:-no}"
 
