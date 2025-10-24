@@ -1116,7 +1116,6 @@ def print_main_menu():
     print("  [cq] Clear queue table")
     print("  [ca] Clear actions table")
     print("  [cs] Clear feed stats")
-    print("  [most] Show most used feeds")
     print("  [least] Show least used feeds")
     print("  [l] List search folders")
     print("  [dc] Display queue counts")
@@ -1162,11 +1161,11 @@ Features:
             
         db = ActionDatabase(CACHE_DB)
         
-        # Parse feed URLs and update the defined_feeds table
-        feed_urls = parse_feed_urls()
-        db.update_defined_feeds(feed_urls)
+        ## Parse feed URLs and update the defined_feeds table
+        #feed_urls = parse_feed_urls()
+        #db.update_defined_feeds(feed_urls)
         
-        update_usage_stats_for_all(db)
+        #update_usage_stats_for_all(db)
         
         while True:
             print("\nNewsboat URL Processor")
@@ -1183,32 +1182,20 @@ Features:
                 count = db.clear_queue()
                 print(f"\nCleared queue table (removed {count} URLs)")
                 print(f"Queue: {db.count_queue()} URLs")
+                table_counts(db)
                 
             elif selection == 'ca':
                 count = db.clear_actions()
                 print(f"\nCleared actions table (removed {count} records)")
                 print(f"Actions: {db.count_actions()} processed URLs")
+                table_counts(db)
                 
             elif selection == 'cs':
                 count = db.clear_feed_stats()
                 print(f"\nCleared feed stats table (removed {count} records)")
-                
-            elif selection == 'most':
-                most_used = db.get_most_used_feeds(20)  # Show top 20
-                if not most_used:
-                    print("No feed statistics available")
-                    continue
-                    
-                print("\nMost Used RSS Feeds:")
-                print("-" * 80)
-                print(f"{'Rank':<5} {'Feed URL':<60} {'Uses':<6}")
-                print("-" * 80)
-                
-                for i, (feed_url, usage_count) in enumerate(most_used, 1):
-                    # Truncate long URLs for display
-                    display_url = feed_url[:57] + "..." if len(feed_url) > 60 else feed_url
-                    print(f"{i:<5} {display_url:<60} {usage_count:<6}")
-            
+
+                table_counts(db)
+        
             elif selection == 'least':
                 least_used = db.get_least_used_feeds(1000)
                 if not least_used:
@@ -1236,6 +1223,12 @@ Features:
                     print(f"{i}. {folder['name']} ({folder['count']} items)")
                     
             elif selection == 'a':
+
+                # Parse feed URLs and update the defined_feeds table
+                feed_urls = parse_feed_urls()
+                db.update_defined_feeds(feed_urls)
+                update_usage_stats_for_all(db)
+
                 folders = get_nonzero_folders()
                 if not folders:
                     print("No search folders with unread articles found")
