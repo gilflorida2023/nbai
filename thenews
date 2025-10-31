@@ -1,6 +1,6 @@
-export PROJECT_DIR="/home/scout/projects/python/nbai"
-rm -rf ${PROJECT_DIR}/venv
-python3 -m venv ${PROJECT_DIR}/venv/ 
+export PROJECT_DIR="/home/${USER}/projects/python/nbai"
+rm -rf ${PROJECT_DIR}/venv 2> /dev/null
+python3 -m venv venv
 source ${PROJECT_DIR}/venv/bin/activate 
 pip install -r ${PROJECT_DIR}/requirements.txt
 cd scripts

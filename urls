@@ -1,0 +1,305 @@
+# query feeds
+"query:adam_schiff:unread = \"yes\" and title =~ \"schiff\""
+"query:adrienne_elrod:unread = \"yes\" and title =~ \"adrienne\" and title =~ \"elrod\""
+"query:aipac:unread = \"yes\" and title =~ \"aipac\""
+"query:alaska:unread = \"yes\" and title =~ \"alaska\""
+"query:alice_weidel:unread = \"yes\" and title =~ \"alice\" and title =~ \"weidel\""
+"query:alkatraz:unread = \"yes\" and title =~ \"alkatraz\""
+"query:ana_kasparian:unread = \"yes\" and title =~ \"ana\" and title =~ \"kasparian\""
+"query:anna_luna:unread = \"yes\" and title =~ \"rep\" and title =~ \"luna\""
+"query:andrew_bailey:unread = \"yes\" and title =~ \"andrew\" and title =~ \"bailey\""
+"query:australia:unread = \"yes\" and title =~ \"australia\""
+"query:billy_bragg:unread = \"yes\" and title =~ \"billy\" and title =~ \"bragg\""
+"query:bernie_sanders:unread = \"yes\" and title =~ \"sanders\""
+"query:biden:unread = \"yes\" and title =~ \"biden\""
+"query:bill_clinton:unread = \"yes\" and title =~ \"bill\" and title =~ \"clinton\""
+"query:bill_cassidy:unread = \"yes\" and title =~ \"bill\" and title =~ \"cassidy\""
+"query:bill_gates:unread = \"yes\" and title =~ \"bill\" and title =~ \"gates\""
+"query:bitcoin:unread = \"yes\" and title =~ \"bitcoin\""
+"query:blackrock:unread = \"yes\" and title =~ \"blackrock\""
+"query:brics:unread = \"yes\" and title =~ \"brics\""
+"query:bryan_steil:unread = \"yes\" and title =~ \"bryan\" and title =~ \"steil\""
+"query:burkina_faso:unread = \"yes\" and ( ( title =~ \"burkina\" and title =~ \"faso\") or ( title =~ \"ibrahim\" and title =~ \"traor\" ) )"
+"query:cory_booker:unread = \"yes\" and title =~ \"cory\" and title =~ \"booker\""
+"query:cartoon:unread = \"yes\" and title =~ \"cartoon\""
+"query:canada:unread = \"yes\" and title =~ \"canada\""
+"query:cdc:unread = \"yes\" and title =~ \"cdc\""
+"query:charlie_kirk:unread = \"yes\" and title =~ \"charlie\" and title =~ \"kirk\""
+"query:christian:unread = \"yes\" and title =~ \"christian\""
+"query:chuck_schumer:unread = \"yes\" and title =~ \"chuck\" and title =~ \"schumer\""
+"query:colin_powell:unread = \"yes\" and title =~ \"colin\" and title =~ \"powell\""
+"query:dan_bongino:unread = \"yes\" and title =~ \"dan\" and title =~ \"bongino\""
+"query:deepstate:unread = \"yes\" and ( title =~ \"deepstate\" and title =~ \"covid\" )"
+"query:desantis:unread = \"yes\" and ( title =~ \"desantis\" and title =~ \"covid\" )"
+"query:disaster:unread = \"yes\" and ( title =~ \"volcano\" or title =~ \"tsunami\" or title =~ \"erupt\" )"
+"query:desantis:unread = \"yes\" and title =~ \"desantis\""
+"query:donald_trump:unread = \"yes\" and title =~ \"donald\" and title =~ \"trump\""
+"query:ehud_barak:unread = \"yes\" and title =~ \"ehud\" and title =~ \"barak\""
+"query:elon_musk:unread = \"yes\" and title =~ \"elon\" and title =~ \"musk\""
+"query:emmanuel_macron:unread = \"yes\" and title =~ \"emmanuel\" and title =~ \"macron\""
+"query:epstein:unread = \"yes\" and title =~ \"epstein\""
+"query:elon_companies:unread = \"yes\" and ( title =~ \"tesla\" or  title =~ \"spacex\" or title =~ \"boring co\" or title =~ \"xai\" or title =~ \"optimus\" or title =~ \"tesla bot\" or title =~ \"pi phone\" or title =~ \"piphone\")"
+"query:erdogan:unread = \"yes\" and title =~ \"erdogan\""
+"query:fauci:unread = \"yes\" and title =~ \"fauci\""
+"query:flotilla:unread = \"yes\" and title =~ \"flotilla\""
+"query:federal_takeover:unread = \"yes\" and title =~ \"federal\" and title =~ \"takeover\""
+"query:fukoshima:unread = \"yes\" and title =~ \"fukoshima\""
+"query:gavin_newsom:unread = \"yes\" and title =~ \"newsom\""
+"query:gaza1:unread = \"yes\" and ( title =~ \"gaza\" or content =~ \"gaza\" or feedtitle =~ \"gaza\" or description =~ \"gaza\")"
+"query:general_flynn:unread = \"yes\" and title =~ \"general\" and title =~ \"flynn\""
+"query:glenn_pprager:unread = \"yes\" and title =~ \"glenn\" and title =~ \"pprager\""               # epstein investigator
+"query:ghislaine_maxwell:unread = \"yes\" and title =~ \"ghislaine\" and title =~ \"maxwell\""
+"query:glen_beck:unread = \"yes\" and title =~ \"glen\" and title =~ \"beck\""
+"query:golden_dome:unread = \"yes\" and title =~ \"golden\" and title =~ \"dome\""
+"query:gold_spot:unread = \"yes\" and title =~ \"gold\" and title =~ \"spot\""
+"query:greta_thunberg:unread = \"yes\" and title =~ \"thunberg\""
+"query:grand_minimum:unread = \"yes\" and title =~ \"grand\" and title =~ \"minimum\""
+"query:hillary_clinton:unread = \"yes\" and title =~ \"hillary\" and title =~ \"clinton\""
+"query:hunter_S_thonpson:unread = \"no\" and title =~ \"hunter\" and title =~ \"thonpson\""
+"query:houthi:unread = \"yes\" and title =~ \"houthi\""
+"query:hurricane:unread = \"yes\" and title =~ \"hurricane\""
+"query:ice:unread = \"yes\" and title =~ \"ice\" and title =~ \"raid\""
+"query:india:unread = \"yes\" and title =~ \"india\""
+"query:ireland1:unread = \"yes\" and  ( title =~ \"ireland\" or content =~ \"ireland\" or feedtitle =~ \"ireland\" or description =~ \"ireland\")"
+"query:israel_airline:unread = \"yes\" and title =~ \"airline\" and title =~ \"israel\""
+"query:israel_egypt:unread = \"yes\" and title =~ \"egypt\" and title =~ \"israel\""
+"query:israel_iran:unread = \"yes\" and title =~ \"iran\" and title =~ \"israel\""
+"query:israel_jordan:unread = \"yes\" and title =~ \"jordan\" and title =~ \"israel\""
+"query:israel_syria:unread = \"yes\" and title =~ \"syria\" and title =~ \"israel\""
+"query:israel:unread = \"yes\" and title =~ \"israel\""
+"query:james_comey:unread = \"yes\" and title =~ \"james\" and title =~ \"comey\""
+"query:jamie_raskin:unread = \"yes\" and title =~ \"jamie\" and title =~ \"raskin\""
+"query:jasmine_crockett:unread = \"yes\" and title =~ \"crockett\""
+"query:jd_vance:unread = \"yes\" and title =~ \"jd\" and title =~ \"vance\""
+"query:jennifer_hartley:unread = \"yes\" and title =~ \"jennifer\" and title =~ \"hartley\""
+"query:jeff_bezos:unread = \"yes\" and title =~ \"jeff\" and title =~ \"bezos\""
+"query:jerome_powell:unread = \"yes\" and title =~ \"jerome\" and title =~ \"powell\""
+"query:jim_jordan:unread = \"yes\" and title =~ \"jim\" and title =~ \"jordan\""
+"query:jim_oneill:unread = \"yes\" and title =~ \"jim\" and title =~ \"o'neill\""
+"query:john_bolton:unread = \"yes\" and title =~ \"bolton\" and title =~ \"john\""
+"query:john_brennan:unread = \"yes\" and title =~ \"brennan\" and title =~ \"john\""
+"query:john_ratcliffe:unread = \"yes\" and title =~ \"ratcliffe\" and title =~ \"john\""
+"query:kamala_harris:unread = \"yes\" and title =~ \"kamala\" and title =~ \"harris\""
+"query:kash_patel:unread = \"yes\" and title =~ \"kash\" and title =~ \"patel\""
+"query:keanu_reeves:unread = \"yes\" and title =~ \"keanu\" and title =~ \"reeves\""
+"query:larry_fink:unread = \"yes\" and title =~ \"larry\" and title =~ \"fink\""
+"query:laura_loomer:unread = \"yes\" and title =~ \"laura\" and title =~ \"loomer\""
+"query:lindsey_graham:unread = \"yes\" and title =~ \"lindsey\" and title =~ \"graham\""
+"query:linux:unread = \"yes\" and title =~ \"linux\""
+"query:lockheed_martin:unread = \"yes\" and ( ( description =~ \"lockheed\" or content =~ \"lockheed\" or title =~ \"lockheed\" )  and ( description =~ \"lockheed\" or content =~ \"martin\" or title =~ \"martin\" ) )"
+"query:marc_andreessen:unread = \"yes\" and title =~ \"marc\" and title =~ \"andreessen\""
+"query:maduro:unread = \"yes\" and title =~ \"maduro\""
+"query:marco_rubio:unread = \"yes\" and title =~ \"marco\" and title =~ \"rubio\""
+"query:marijuana:unread = \"yes\" and title =~ \"marijuana\""
+"query:matthew_miller:unread = \"yes\" and title =~ \"matthew\" and title =~ \"miller\""
+"query:matt_gaetz:unread = \"yes\" and title =~ \"matt\" and title =~ \"gaetz\""
+"query:melinda_gates:unread = \"yes\" and title =~ \"melinda\" and title =~ \"gates\""
+"query:michael_saylor:unread = \"yes\" and ( title =~ \"mstr\" or title =~ \"saylor\" or title =~ \"microstrategy\")"
+"query:michael_swalwell:unread = \"yes\" and title =~ \"swalwell\" and title =~ \"rep\""
+"query:mike_johnson:unread = \"yes\" and title =~ \"mike\" and title =~ \"johnson\""
+"query:mohammed_marandi:unread = \"yes\" and title =~ \"mohammed\" and title =~ \"marandi\""
+"query:mtg:unread = \"yes\" and title =~ \"mtg\""
+"query:nancy_pelosi:unread = \"yes\" and title =~ \"nancy\" and title =~ \"pelosi\""
+"query:netanyahu:unread = \"yes\" and title =~ \"netanyahu\""
+"query:nick_fuentes:unread = \"yes\" and title =~ \"nick\" and title =~ \"fuentes\""
+"query:nord:unread = \"yes\" and title =~ \"nord\" and title =~ \"stream\" and title =~ \"pipeline\""
+"query:nvidia:unread = \"yes\" and title =~ \"nvidia\""
+"query:only_following_orders:unread = \"yes\" and title =~ \"only\" and title =~ \"folowing\" and title =~ \"orders\""
+"query:oprah:unread = \"yes\" and ( title =~ \"oprah\"  or title =~ \"winfrey\")"
+"query:palantir:unread = \"yes\" and title =~ \"palantir\""
+"query:palestine1:unread = \"yes\" and ( feedtitle =~ \"palestine\" or feedtitle =~ \"palestinian\" or title =~ \"palestine\"  or content =~ \"palestine\" or title =~ \"palestinian\")"
+"query:panama_city:unread = \"yes\" and title =~ \"city\" and title =~ \"panama\""
+"query:pam_bondi:unread = \"yes\" and title =~ \"bondi\""
+"query:paul_blair:unread = \"yes\" and title =~ \"blair\""
+"query:pete_hegseth:unread = \"yes\" and title =~ \"hegseth\" and title =~ \"pete\""
+"query:peter_navarro:unread = \"yes\" and title =~ \"navarro\" and title =~ \"peter\""
+"query:peter_theil:unread = \"yes\" and title =~ \"theil\" and title =~ \"peter\""
+"query:power_hour:unread = \"yes\" and title =~ \"hour\" and title =~ \"power\""
+"query:rfk:unread = \"yes\" and title =~ \"rfk\""
+"query:sam_altman:unread = \"yes\" and title =~ \"sam\" and title =~ \"altman\""
+"query:scott_jennings:unread = \"yes\" and title =~ \"scott\" and title =~ \"jennings\""
+"query:seth_rich:unread = \"yes\" and title =~ \"seth\" and title =~ \"rich\""
+"query:steve_witkoff:unread = \"yes\" and title =~ \"steve\" and title =~ \"witkoff\""
+"query:scotland:unread = \"yes\" and title =~ \"scotland\""
+"query:starve:unread = \"yes\" and ( title =~ \"starv\" or title =~ \"famine\")"
+"query:steve_witkoff:unread = \"yes\" and title =~ \"steve\" and title =~ \"witkoff\""
+"query:tammy_duckworth:unread = \"yes\" and  title =~ \"tammy\" and title =~ \"duckworth\""
+"query:tariff:unread = \"yes\" and title =~ \"tariff\""
+"query:thomas_massie:unread = \"yes\" and title =~ \"thomas\" and title =~ \"massie\""
+"query:tim_burchett:unread = \"yes\" and title =~ \"burchett\""
+"query:tucker_carlson:unread = \"yes\" and  title =~ \"tucker\" and title =~ \"carlson\""
+"query:tulsi_gabbard:unread = \"yes\" and  title =~ \"tulsi\" and title =~ \"gabbard\""
+"query:ukraine:unread = \"yes\" and title =~ \"ukraine\""
+#"query:unread_items:unread = \"yes\""
+"query:unga:unread = \"yes\" and title =~ \"unga\""
+"query:venezuela:unread = \"yes\" and title =~ \"venezuela\""
+"query:venezuela_warships:unread = \"yes\" and title =~ \"venezuela\" and title =~ \"warships\""
+"query:visa_revoked:unread = \"yes\" and title =~ \"visa\" and title =~ \"revoked\""
+"query:weapons:unread = \"yes\" and ( title =~ \"drone\" or title =~ \"mined\" or title =~ \"rockets\")"
+"query:wef:unread = \"yes\" and title =~ \"wef\""
+"query:yemen:unread = \"yes\" and title =~ \"yemen\""
+"query:zuckerburg:unread = \"yes\" and title =~ \"zuckerburg\""
+"query:volodymyr_zelenskyy:unread = \"yes\" and title =~ \"volodymyr\" and title =~ \"zelenskyy\""
+
+
+# feeds
+http://dailycaller.com/section/politics/feed/    !
+http://feeds.abcnews.com/abcnews/usheadlines    !
+http://feeds.bbci.co.uk/news/business/rss.xml    !
+http://feeds.bbci.co.uk/news/northern_ireland/rss.xml    !
+http://feeds.bbci.co.uk/news/rss.xml    !
+http://feeds.bbci.co.uk/news/science_and_environment/rss.xml    !
+http://feeds.bbci.co.uk/news/scotland/rss.xml    !
+http://feeds.bbci.co.uk/news/uk/rss.xml    !
+http://feeds.bbci.co.uk/news/world/asia/rss.xml    !
+http://feeds.bbci.co.uk/news/world/rss.xml    !
+http://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml    !
+http://feeds.examiner.ie/ietopstories    !
+http://feeds.feedburner.com/daily-express-uk-news    !
+http://feeds.feedburner.com/ScottishNewsHeraldScotland    !
+http://feeds.feedburner.com/uk/gizmodo    !
+http://floridapolitics.com/feed/    !
+http://feeds.howtogeek.com/howtogeek    !
+http://feeds.ign.com/ign/all    !
+http://feeds.nbcnews.com/feeds/topstories    !
+http://feeds.nbcnews.com/feeds/worldnews    !
+http://globalnews.ca/canada/feed/    !
+http://indianexpress.com/section/india/feed/    !
+http://indianexpress.com/section/technology/feed/    !
+http://khn.org/feed/    !
+https://bitrss.com/rss.xml    !
+https://business.inquirer.net/feed    !
+https://dailycaller.com/feed/    !
+https://dailykos.com/blogs/main.rss    !
+https://decrypt.co/feed    !
+https://www.dropsitenews.com/feed    !
+https://english.pnn.ps/feed    !
+https://european-union.europa.eu/node/484/rss_en    !
+https://feeds.bbci.co.uk/news/rss.xml?edition=int    !
+https://feeds.bbci.co.uk/news/world/europe/rss.xml      !
+https://feeds.npr.org/1014/rss.xml    !
+https://foreignpolicy.com/feed    !
+https://hnrss.org/frontpage    !
+https://motherjones.com/politics/feed    !
+https://moxie.foxnews.com/google-publisher/politics.xml    !
+https://news.ycombinator.com/rss !
+https://newsbtc.com/feed    !
+https://npr.org/rss/rss.php?id=1014    !
+https://politicalwire.com/feed    !
+https://politicususa.com/feed    !
+https://politifact.com/rss/all    !
+https://press.un.org/en/rss.xml      !
+https://reason.com/feed    !
+https://rollingstone.com/politics/feed    !
+https://techcrunch.com/feed/    !
+https://thegatewaypundit.com/feed    !
+https://thepoliticalinsider.com/feed    !
+https://trustnodes.com/feed    !
+https://u.today/rss    !
+https://www.aljazeera.com/xml/rss/all.xml      !
+https://www.aljazeera.com/xml/rss/all.xml    !
+https://www.al-monitor.com/rss      !
+https://www.breitbart.com/big-government/feed/    !
+https://www.breitbart.com/tech/feed/    !
+https://www.channelnewsasia.com/rssfeeds/8395986    !
+https://www.chicagotribune.com/feed/    !
+https://www.japantimes.co.jp/feed/      !
+https://www.japantimes.co.jp/feed/    !
+https://www.oann.com/feed/    !
+https://www.rappler.com/feed/    !
+https://www.realclearpolitics.com/index.xml    !
+https://www.rt.com/rss              !
+https://www.rt.com/rss/news/    !
+https://www.rt.com/rss/politics/    !
+https://www.rt.com/rss/russia      !
+https://www.scmp.com/rss/91/feed    !
+https://www.techradar.com/feeds.xml    !
+https://www.thedailybeast.com/arc/outboundfeeds/rss/articles/    !
+https://www.theguardian.com/australia-news/rss    !
+https://www.theguardian.com/mostviewed/rss    !
+https://www.theguardian.com/politics/rss    !
+https://www.theguardian.com/uk/business/rss    !
+https://www.theguardian.com/uk/commentisfree/rss    !
+https://www.theguardian.com/us/commentisfree/rss    !
+https://www.theguardian.com/us-news/rss    !
+https://www.theguardian.com/us-news/us-politics/rss    !
+https://www.theguardian.com/world/europe-news/rss    !
+https://www.theguardian.com/world/middleeast/rss    !
+https://www.thehindubusinessline.com/news/world/feeder/default.rss    !
+https://www.theverge.com/rss/index.xml    !
+https://www.tmz.com/rss.xml    !
+https://www.usmagazine.com/feed/    !
+https://www.washingtonexaminer.com/feed/    !
+https://www.yahoo.com/news/rss    !
+http://thecaucus.blogs.nytimes.com/feed/    !
+http://thewalrus.ca/feed/    !
+http://twitchy.com/category/us-politics/feed/    !
+http://variety.com/feed/    !
+http://www.abc.net.au/news/feed/1534/rss.xml    !
+http://www.abc.net.au/news/feed/51892/rss.xml    !
+http://www.brandonsun.com/rss/?path=%2Fnational%2Fbreaking-news    !
+http://www.dnaindia.com/rss.xml    !
+http://www.dynamicbusiness.com.au/feed    !
+http://www.film-news.co.uk/rss/UK/news    !
+http://www.ibtimes.co.uk/rss/science    !
+http://www.ibtimes.co.uk/rss/uk    !
+http://www.manchestereveningnews.co.uk/rss.xml    !
+http://www.newsweek.com/rss    !
+http://www.oxfordmail.co.uk/news/rss/    !
+http://www.redstate.com/feed/    !
+http://www.standard.co.uk/news/politics/rss    !
+http://www.standard.co.uk/news/rss    !
+http://www.techinsider.io/rss    !
+http://www.techspot.com/backend.xml    !
+https://thegrayzone.com/feed/
+http://www.theguardian.com/au/rss    !
+http://www.theguardian.com/uk/rss    !
+http://www.theguardian.com/world/australian-politics/rss    !
+http://www.theguardian.com/world/rss    !
+http://www.theguardian.com/world/usa/rss    !
+http://www.thehindubusinessline.com/news/?service=rss    !
+http://www.thehindu.com/news/cities/?service=rss    !
+http://www.thehindu.com/news/national/?service=rss    !
+http://www.thehindu.com/sci-tech/science/?service=rss    !
+http://www.thehindu.com/sci-tech/?service=rss    !
+http://www.theweek.co.uk/feeds/all    !
+http://zeenews.india.com/rss/india-national-news.xml    !
+http://zeenews.india.com/rss/world-news.xml    !
+https://news.google.com/rss/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNRGxqTjNjd0VnSmxiaWdBUAE?hl=en-US&gl=US&ceid=US%3Aen    !
+https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen   !
+https://news.google.com/rss/topics/CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE/sections/CAQiTkNCSVNORG9JYkc5allXeGZkakpDRUd4dlkyRnNYM1l5WDNObFkzUnBiMjV5Q2hJSUwyMHZNSEpvWm5SNkNnb0lMMjB2TUhKb1puUW9BQSowCAAqLAgKIiZDQklTRmpvSWJHOWpZV3hmZGpKNkNnb0lMMjB2TUhKb1puUW9BQVABUAE?hl=en-US&gl=US&ceid=US%3Aen  !
+https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx6TVdZU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen   !
+
+#Examples
+https://www.youtube.com/feeds/videos.xml?channel_id=UCC44ogxhq1L_3UTAUnQSlog  "~Whats_her_face"   
+https://www.youtube.com/feeds/videos.xml?channel_id=UCAvSnci_3qHF_7c2LQnP_wg  "~Maneco64"   
+https://www.youtube.com/feeds/videos.xml?channel_id=UC4rC0QxBD1eRPKMHIIpL0vA  "~Matt_kim"   
+https://www.youtube.com/feeds/videos.xml?channel_id=UCaXkIU1QidjPwiAYu6GcHjg  "~Msnbc"   
+https://www.youtube.com/feeds/videos.xml?channel_id=UCupvZG-5ko_eiXAupbDfxWw  "~Cnn"   
+https://www.youtube.com/feeds/videos.xml?channel_id=UCNbIDJNNgaRrXOD7VllIMRQ  "~Oan"   
+https://www.youtube.com/feeds/videos.xml?channel_id=UCzQUP1qoWDoEbmsQxvdjxgQ  "~Powerful_jre"   
+https://www.youtube.com/feeds/videos.xml?channel_id=UC1yBKRuGpC1tSM73A0ZjYjQ  "~Tyt"   
+https://www.youtube.com/feeds/videos.xml?channel_id=UCCgpGpylCfrJIV-RwA_L7tg  "~Ian_carroll"   
+https://www.youtube.com/feeds/videos.xml?channel_id=UC3M7l8ved_rYQ45AVzS0RGA  "~Jimmy_dore"   
+https://www.youtube.com/feeds/videos.xml?channel_id=UCatt7TBjfBkiJWx8khav_Gg  "~Piers_morgan_uncensored"   
+https://www.youtube.com/feeds/videos.xml?channel_id=UCoJhK5kMc4LjBKdiYrDtzlA  "~Redacted"   
+https://www.youtube.com/feeds/videos.xml?channel_id=UCXIJgqnII2ZOINSWNOGFThA  "~Fox News"   
+https://www.youtube.com/feeds/videos.xml?channel_id=UCEfe80CP2cs1eLRNQazffZw  "~Dave Smith"   
+https://www.youtube.com/feeds/videos.xml?channel_id=UCGttrUON87gWfU6dMWm1fcA  "~Tucker Carlson"   
+https://www.youtube.com/feeds/videos.xml?channel_id=UCO0akufu9MOzyz3nvGIXAAw  "~Sky News"   
+https://www.youtube.com/feeds/videos.xml?channel_id=UCCjG8NtOig0USdrT5D1FpxQ  "~News Nation"   
+https://www.youtube.com/feeds/videos.xml?channel_id=UCg40OxZ1GYh3u3jBntB6DLg  "~Forbes Breaking News"   
+https://www.youtube.com/feeds/videos.xml?channel_id=UCIALMKvObZNtJ6AmdCLP7Lg  "~Bloomberg Television"
+https://www.youtube.com/feeds/videos.xml?channel_id=UChF5O40UBqAc82I7-i5ig6A  "~Bloomberg Podcasts"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCNCwF_2fZ9O8x2sVlPumPjg  "~Nick Fuentes"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCEATT6H3U5lu20eKPuHVN8A  "~Chris Hedges"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCL0u5uz7KZ9q-pe-VC8TY-w  "~Candace Owens"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC5AQEUAwCh1sGDvkQtkDWUQ  "~Theo Von"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCfaIu2jO-fppCQV_lchCRIQ  "~Charlie Kirk"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCLdP3jmBYe9lAZQbY6OSYjw  "~Benny Johnson"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVrK_pMRp_q8IelpfUCTGLQ  "~Turning Point USA"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCzJXNzqz6VMHSNInQt_7q6w  "~Megyn Kelly"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCOxLhz6B_elvLflntSEfnzA  "~Danny Haiphong"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCjl4caubo8dWBlNTaMcrVQg  "~OMG okefe Media Group"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCDRIjKy6eZOvKtOELtTdeUA  "~Breaking Points"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCDTOen0GvZn513CvknUS66A  "~Liberty Vault"
