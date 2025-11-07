@@ -7,7 +7,7 @@ cd scripts
 while :
 do
     newsboat 
-    python ${PROJECT_DIR}/scripts/nbai.py 192.168.0.10:11434  192.168.0.8:11434
+    python ${PROJECT_DIR}/scripts/nbai.py 192.168.0.5:11434 192.168.0.10:11434  192.168.0.8:11434
     python ${PROJECT_DIR}/scripts/tabletpost.py 
 
     

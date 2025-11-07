@@ -41,6 +41,59 @@ is_content_empty() {
     fi
 }
 
+# Load error configuration
+load_error_config() {
+    local config_dir="${HOME}/.config"
+    local config_file="${config_dir}/${SCRIPT_NAME}_errors.conf"
+    
+    # Create config directory if it doesn't exist
+    mkdir -p "$config_dir"
+    
+    if [ -f "$config_file" ]; then
+        ERROR_PATTERNS=$(jq -r '.error_patterns[] | "\(.pattern)|\(.error_type)|\(.user_message)"' "$config_file" 2>/dev/null)
+        EMPTY_ERRORS=$(jq -r '.empty_content_errors[]' "$config_file" 2>/dev/null | tr '\n' '|' | sed 's/|$//')
+    fi
+    
+    # If config loading failed or no patterns, set defaults
+    if [ -z "$ERROR_PATTERNS" ]; then
+        ERROR_PATTERNS="Please enable JS and disable any ad blocker|JAVASCRIPT_REQUIRED|Website requires JavaScript which is not supported"
+        EMPTY_ERRORS="EMPTY_CONTENT|JAVASCRIPT_REQUIRED"
+    fi
+}
+
+# Check for known error patterns in content
+check_content_errors() {
+    local content="$1"
+    
+    while IFS='|' read -r pattern error_type user_message; do
+        if echo "$content" | grep -qi "$pattern"; then
+            echo "$error_type|$user_message"
+            return 0
+        fi
+    done <<< "$ERROR_PATTERNS"
+    
+    return 1
+}
+
+# Enhanced content validation
+validate_article_content() {
+    local content="$1"
+    
+    # Check for empty content first
+    if is_content_empty "$content"; then
+        echo "EMPTY_CONTENT|No meaningful content found (only whitespace)"
+        return 1
+    fi
+    
+    # Check for known error patterns
+    if error_info=$(check_content_errors "$content"); then
+        echo "$error_info"
+        return 1
+    fi
+    
+    return 0
+}
+
 # Function to unload all Ollama models from memory
 unload_ollama_models() {
     local host="$1"
@@ -97,6 +150,9 @@ if [ $# -lt 2 ]; then
     exit 1
 fi
 
+# Load error configuration
+load_error_config
+
 # Configuration
 OLLAMA_HOST="$1"
 validate_ollama_host "$OLLAMA_HOST" "article3 main module"
@@ -125,7 +181,7 @@ EOF
 
 #SUMMARY_PROMPT="Respond ONLY with the ${SUMMARY_LENGTH}-character summary. No thinking output. Summary: $(cat <<'EOF'
 #Provide a concise summary of this article in exactly ${SUMMARY_LENGTH} characters or less (including spaces).
-#Highlight Elon Musk’s free-speech advocacy and business potential (Tesla, Starlink, X, Grok/xAI, SpaceX)  emphasizing their innovation and economic benefits. Focus on policy implications favoring his ventures.
+#Highlight Elon Musk's free-speech advocacy and business potential (Tesla, Starlink, X, Grok/xAI, SpaceX)  emphasizing their innovation and economic benefits. Focus on policy implications favoring his ventures.
 #EOF
 #)"
 
@@ -242,12 +298,20 @@ else
     echo "$ARTICLE_CONTENT" > "$CACHE_FILE"
 fi
 
-# Check if content is empty (only whitespace/blank lines) before processing
-echo "Checking content validity..." >&2
-if is_content_empty "$ARTICLE_CONTENT"; then
-    echo "EMPTY CONTENT" >&2
-    # Remove the empty cache file to force refresh on next attempt
-    rm -f "$CACHE_FILE"
+# Enhanced content validation with configurable error patterns
+echo "Validating content..." >&2
+if error_info=$(validate_article_content "$ARTICLE_CONTENT"); then
+    echo "Content validation passed" >&2
+else
+    IFS='|' read -r error_type user_message <<< "$error_info"
+    echo "$error_type" >&2
+    echo "$user_message" >&2
+    
+    # Remove cache file for certain error types
+    if [[ "$EMPTY_ERRORS" == *"$error_type"* ]]; then
+        rm -f "$CACHE_FILE"
+        echo "Cache cleared due to $error_type" >&2
+    fi
     exit 1
 fi
 
