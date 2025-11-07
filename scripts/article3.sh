@@ -29,6 +29,18 @@ validate_ollama_host() {
     fi
 }
 
+# Function to check if content is empty (only whitespace/blank lines)
+is_content_empty() {
+    local content="$1"
+    # Remove all whitespace and check if anything remains
+    local stripped_content=$(echo "$content" | tr -d '[:space:]')
+    if [ -z "$stripped_content" ]; then
+        return 0  # Content is empty
+    else
+        return 1  # Content has non-whitespace characters
+    fi
+}
+
 # Function to unload all Ollama models from memory
 unload_ollama_models() {
     local host="$1"
@@ -228,6 +240,15 @@ else
     CHROME_UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
     ARTICLE_CONTENT=$(curl -s -L -A "$CHROME_UA" "$URL" | lynx -dump -stdin -nolist -width=80)
     echo "$ARTICLE_CONTENT" > "$CACHE_FILE"
+fi
+
+# Check if content is empty (only whitespace/blank lines) before processing
+echo "Checking content validity..." >&2
+if is_content_empty "$ARTICLE_CONTENT"; then
+    echo "EMPTY CONTENT" >&2
+    # Remove the empty cache file to force refresh on next attempt
+    rm -f "$CACHE_FILE"
+    exit 1
 fi
 
 # Clean thinking tags
